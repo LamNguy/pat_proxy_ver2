@@ -8,10 +8,10 @@ PRaaS is a service which is integrated in OpenStack. It use Port Address Transla
 - Receive request from Proxy CLI and handles PAT operations such as creating, removing and modifying.
 - Monitor the status of virtual machines which were establised connection by PraaS every 30s and update the PAT connection of deleted or ip-changed virtual machines in OpenStack.
 
-#### 1. Prerequisite
+### 1. Prerequisite
 - Python virtual environment such as __*virtualenv*__ or __*anaconda*__. (optional)
 - Python >= 2.7
-#### 2. Installation
+### 2. Installation
 Thesis project use python interpreter in the current environment. Use virtual environment is a safe and low-risk aprroach for not conflicting and the virtual python interpreter will be choosen. The guide using tool python __*virtualenv*__ for creating environment.
 
 __Create virtual python env__
@@ -47,7 +47,7 @@ __Uninstall service__
 ```
 $ praas-uninstall
 ```
-#### 3. Configuration
+### 3. Configuration
 PRaaS include:
 - Log file: _/var/log/praas_
 - Library: _/usr/local/lib/praas_
@@ -79,7 +79,7 @@ clouds:
     interface: "public"
     identity_api_version: 3
 ```
-#### 4. Start PRaaS services
+### 4. Start PRaaS services
 PRaaS include __*PAT agent service*__ and __*Monitor agent service*__
 ```
 $ systemctl start praas-pat-agent.service
