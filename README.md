@@ -7,6 +7,7 @@ PRaaS is a service which is integrated in OpenStack. It use Port Address Transla
 - Manage PAT information on project routers in OpenStack
 - Receive request from Proxy CLI and handles PAT operations such as creating, removing and modifying.
 - Monitor the status of virtual machines which were establised connection by PraaS every 30s and update the PAT connection of deleted or ip-changed virtual machines in OpenStack.
+- Support RESTfult API for develop
 
 ### 1. Prerequisite
 - Python virtual environment such as __*virtualenv*__ or __*anaconda*__. (optional)
